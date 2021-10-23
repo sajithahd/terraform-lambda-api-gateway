@@ -5,12 +5,17 @@ output "lambda_bucket_name" {
   value = aws_s3_bucket.estore_bucket.id
 }
 
-output "function_name" {
-  description = "Lambda function. name"
-  value = aws_lambda_function.lambda_estore.function_name
+output "l_function_name" {
+  description = "Lambda function"
+  value = aws_lambda_function.lambda_function_estore.function_name
+}
+
+output "l_db_function_name" {
+  description = "Lambda function for db"
+  value = aws_lambda_function.lambda_function_estore_db.function_name
 }
 
 output "base_url" {
   description = "Base URL for API Gateway Stage."
-  value = aws_apigatewayv2_stage.stage-estore.invoke_url
+  value = aws_apigatewayv2_stage.stage_estore.invoke_url
 }
