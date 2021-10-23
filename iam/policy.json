@@ -11,7 +11,7 @@
       "dynamodb:PutItem",
       "dynamodb:UpdateItem"
     ],
-    "Resource": "arn:aws:dynamodb:ap-south-1:770435788379:table/db-estore"
+    "Resource": "arn:aws:dynamodb:ap-south-1:770435788379:table/db_estore"
   }
   ]
 }
